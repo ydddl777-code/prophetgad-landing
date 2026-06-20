@@ -1,143 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Prophet Gad — Music, Counsel &amp; Discernment | Thread Bear Music</title>
-<meta name="description" content="Prophet Gad — bachata, gospel reggae, and prophetic music from Sosua, Dominican Republic. Counsel, doctrine, and music discernment. Thread Bear Music." />
-<meta property="og:title" content="Prophet Gad — Music, Counsel &amp; Discernment" />
-<meta property="og:description" content="Music, prayer, doctrine, and discernment for the remnant. Thread Bear Music." />
-<meta property="og:url" content="https://prophetgad.com" />
-<meta property="og:image" content="/og-image.jpg" />
-<meta property="og:type" content="website" />
-<style>
-  :root{
-    --bg:#0d0b14; --panel:#171326; --panel2:#1f1933;
-    --gold:#d9b25a; --gold2:#f0d289; --ink:#ece7f5; --muted:#a99fc4;
-    --line:#322a4d;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:radial-gradient(1200px 600px at 50% -10%,#241c3d 0%,var(--bg) 60%);
-       color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.5;}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-  /* HERO */
-  header{text-align:center;padding:64px 20px 28px}
-  .kicker{letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-size:.72rem;font-family:Arial,Helvetica,sans-serif}
-  h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.25em 0 .15em;color:var(--gold2);font-weight:700;letter-spacing:.02em}
-  .tag{color:var(--muted);font-size:clamp(1rem,2.4vw,1.2rem);max-width:640px;margin:0 auto}
-  .label{font-family:Arial,Helvetica,sans-serif;font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin-top:14px}
-  /* SECTION TITLES */
-  h2{font-family:Arial,Helvetica,sans-serif;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
-     text-align:center;margin:54px 0 22px}
-  /* BOX GRID */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:460px){.grid{grid-template-columns:1fr}}
-  .box{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
-       border-radius:14px;padding:24px 20px;display:block;transition:.18s;min-height:150px}
-  .box:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.45)}
-  .box .ico{font-size:1.8rem}
-  .box .name{font-size:1.25rem;color:var(--gold2);margin:.4em 0 .2em;font-weight:700}
-  .box .desc{color:var(--muted);font-size:.95rem;font-family:Arial,Helvetica,sans-serif}
-  .box .go{display:inline-block;margin-top:12px;color:var(--gold);font-family:Arial,Helvetica,sans-serif;
-           font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}
-  /* LATEST */
-  .latest{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media(max-width:760px){.latest{grid-template-columns:1fr}}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-  .card .thumb{aspect-ratio:16/9;background:#000 center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#5b5378;font-family:Arial,sans-serif;font-size:.8rem}
-  .card .cbody{padding:14px 16px}
-  .card .ctitle{font-size:1rem;color:var(--ink)}
-  .pill{display:inline-block;margin-top:10px;margin-right:8px;padding:6px 12px;border:1px solid var(--gold);
-        border-radius:999px;color:var(--gold);font-family:Arial,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
-  .pill:hover{background:var(--gold);color:#1a1530}
-  /* EMAIL */
-  .email{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
-         border-radius:16px;padding:34px 24px;text-align:center;margin-top:8px}
-  .email h3{color:var(--gold2);font-size:1.5rem;margin-bottom:.3em}
-  .email p{color:var(--muted);font-family:Arial,sans-serif;font-size:.92rem;max-width:520px;margin:0 auto 18px}
-  .row{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-  .row input{flex:1;min-width:220px;padding:13px 16px;border-radius:10px;border:1px solid var(--line);
-             background:#0f0c1a;color:var(--ink);font-size:1rem;font-family:Arial,sans-serif}
-  .row button{padding:13px 24px;border:0;border-radius:10px;background:linear-gradient(180deg,var(--gold2),var(--gold));
-              color:#1a1530;font-weight:700;font-family:Arial,sans-serif;cursor:pointer;letter-spacing:.04em}
-  .fine{color:#6f668c;font-size:.74rem;font-family:Arial,sans-serif;margin-top:12px}
-  /* BELIEVE */
-  .believe{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);
-           border-radius:12px;padding:26px 28px;color:var(--muted);font-size:1.05rem;max-width:760px;margin:0 auto}
-  .believe strong{color:var(--gold2)}
-  /* FOOTER */
-  footer{text-align:center;padding:50px 20px 40px;color:#6f668c;font-family:Arial,sans-serif;font-size:.8rem;margin-top:50px;border-top:1px solid var(--line)}
-  footer a{color:var(--muted);margin:0 10px}
-  .copy{margin-top:16px;font-size:.72rem;color:#534b70}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prophet Gad — Music, Counsel &amp; Discernment | Thread Bear Music</title>
+  <meta name="description" content="Enter the Prophet Gad ecosystem: music, fervent counsel, doctrinal defense, clear-signal discernment, prophetic videos, and forthcoming books.">
+  <meta property="og:title" content="Prophet Gad — Music, Counsel &amp; Discernment">
+  <meta property="og:description" content="Music, counsel, doctrine, and discernment for the remnant.">
+  <meta property="og:url" content="https://prophetgad.com">
+  <meta property="og:image" content="https://i.ytimg.com/vi/SnR0IcHCyfQ/maxresdefault.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <style>
+    :root { --ink:#f5eddb; --muted:#b9aa91; --gold:#d7ad58; --gold-light:#f4d895; --ember:#9e3a23; --night:#080a0d; --panel:#11151a; --line:#403722; --display:Georgia,"Times New Roman",serif; --sans:Inter,ui-sans-serif,system-ui,sans-serif }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--ink);background:var(--night);font-family:var(--sans);line-height:1.6}
+    body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 50% -5%,rgba(215,173,88,.2),transparent 34rem),radial-gradient(circle at 90% 35%,rgba(158,58,35,.13),transparent 28rem),linear-gradient(180deg,#10141a 0,#080a0d 48%,#090807 100%)}
+    body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.12;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:34px 34px}
+    a{color:inherit}.wrap{width:min(1160px,calc(100% - 34px));margin:auto}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.26em;font-size:.72rem;font-weight:800}.section-title{margin:0 0 10px;color:var(--gold-light);font:700 clamp(1.8rem,4vw,2.7rem)/1.1 var(--display)}.section-copy{max-width:720px;margin:0 auto 28px;color:var(--muted)}
+    nav{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(215,173,88,.2);background:rgba(8,10,13,.9);backdrop-filter:blur(16px)}.nav-inner{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;font:700 1.15rem var(--display);color:var(--gold-light);letter-spacing:.05em}.nav-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:15px}.nav-links a{color:var(--muted);text-decoration:none;font-size:.79rem;font-weight:700}.nav-links a:hover,.nav-links a:focus-visible{color:var(--gold-light)}
+    header{min-height:76vh;display:grid;place-items:center;text-align:center;padding:92px 0 70px}.seal{width:88px;aspect-ratio:1;margin:0 auto 24px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;color:var(--gold-light);font:700 2rem var(--display);box-shadow:0 0 42px rgba(215,173,88,.17);background:radial-gradient(circle,rgba(215,173,88,.15),transparent 66%)}h1{max-width:920px;margin:12px auto 18px;font:700 clamp(3rem,8vw,6.5rem)/.95 var(--display);color:var(--gold-light);letter-spacing:-.035em}.hero-copy{max-width:790px;margin:0 auto;color:#d4c7b3;font-size:clamp(1.05rem,2.2vw,1.3rem)}.actions{margin-top:30px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border:1px solid var(--gold);border-radius:999px;color:#171108;background:linear-gradient(180deg,var(--gold-light),var(--gold));text-decoration:none;font-weight:900;letter-spacing:.02em}.button.secondary{color:var(--gold-light);background:transparent}
+    section{padding:78px 0;text-align:center}.portal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:left}.portal{min-height:210px;padding:26px;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;text-decoration:none;background:linear-gradient(145deg,rgba(28,31,35,.96),rgba(13,16,20,.96));transition:transform .18s,border-color .18s,box-shadow .18s}.portal:hover,.portal:focus-visible{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 18px 44px rgba(0,0,0,.35)}.portal .num{color:var(--gold);font:700 .72rem var(--sans);letter-spacing:.2em}.portal h3{margin:22px 0 8px;color:var(--gold-light);font:700 1.45rem var(--display)}.portal p{margin:0;color:var(--muted);font-size:.92rem}.portal .arrow{margin-top:auto;padding-top:20px;color:var(--gold);font-weight:900}
+    .video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;text-align:left}.video{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.video iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}.video h3{margin:0;padding:15px 17px 17px;color:#e8dbc5;font:700 1rem/1.35 var(--display)}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;text-align:left;align-items:stretch}.oracle-card,.about-copy{border:1px solid var(--line);border-radius:20px;padding:34px;background:linear-gradient(145deg,rgba(31,27,20,.95),rgba(14,16,19,.96))}.verse{margin:18px 0 0;color:var(--gold-light);font:italic 1.3rem/1.55 var(--display)}.about-copy p{color:#c5b8a4}
+    .books{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;text-align:left}.book{min-height:285px;display:flex;flex-direction:column;padding:24px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,#1e1a14,#101216 68%)}.book .spine{width:42px;height:5px;margin-bottom:36px;background:var(--gold)}.book h3{margin:0 0 8px;color:var(--gold-light);font:700 1.25rem/1.25 var(--display)}.book p{color:var(--muted);font-size:.88rem}.coming{margin-top:auto;color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:.69rem;font-weight:900}.store-note{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:20px;padding:20px;border:1px dashed rgba(215,173,88,.45);border-radius:14px;text-align:left;color:var(--muted)}.store-note button{min-width:180px;min-height:44px;border:1px solid #665a42;border-radius:999px;color:#8f856f;background:#171717;font-weight:800;cursor:not-allowed}
+    .email{max-width:820px;margin:auto;padding:42px;border:1px solid var(--gold);border-radius:22px;background:radial-gradient(circle at 50% 0,rgba(215,173,88,.14),transparent 65%),#101215}.email-form{display:flex;gap:10px;max-width:590px;margin:24px auto 0}.email-form input{flex:1;min-width:0;min-height:50px;padding:0 17px;border:1px solid #514830;border-radius:999px;color:var(--ink);background:#090b0e;font:inherit}.email-form button{min-height:50px;padding:0 20px;border:0;border-radius:999px;color:#171108;background:linear-gradient(180deg,var(--gold-light),var(--gold));font-weight:900;cursor:pointer}.fine{margin:12px 0 0;color:#847967;font-size:.76rem}footer{padding:38px 0;border-top:1px solid rgba(215,173,88,.18);color:#837965;text-align:center;font-size:.8rem}
+    @media(max-width:880px){.portal-grid{grid-template-columns:repeat(2,1fr)}.books{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}}@media(max-width:620px){.nav-links{display:none}header{min-height:auto;padding:74px 0 54px}.portal-grid,.video-grid,.books{grid-template-columns:1fr}section{padding:58px 0}.email-form,.store-note{flex-direction:column}.email-form input,.email-form button,.store-note button{width:100%}.email{padding:30px 20px}}
+  </style>
 </head>
 <body>
-  <header>
-    <div class="kicker">Remnant Seed · An Oracle</div>
-    <h1>Prophet Gad</h1>
-    <p class="tag">Music, counsel, and discernment for the remnant — bachata, gospel reggae, and prophetic fire.</p>
-    <div class="label">Thread Bear Music</div>
-  </header>
-
-  <main class="wrap">
-    <!-- SIX BOXES -->
-    <h2>Enter the Ecosystem</h2>
-    <div class="grid">
-      <a class="box" href="https://pgmc.ai"><div class="ico">🎵</div><div class="name">Music</div><div class="desc">The full catalog — 600+ songs to stream and own.</div><span class="go">Open PGMC →</span></a>
-      <a class="box" href="https://pgfc.ai"><div class="ico">🙏</div><div class="name">Fervent Counsel</div><div class="desc">Bring your burden. Let Prophet Gad pray with you.</div><span class="go">Open PGFC →</span></a>
-      <a class="box" href="https://pgdd.ai"><div class="ico">⚔️</div><div class="name">The Threshing Floor</div><div class="desc">Doctrine tested in the fire. Step into the arena.</div><span class="go">Open PGDD →</span></a>
-      <a class="box" href="https://pgcs.ai"><div class="ico">📡</div><div class="name">Clear Signal</div><div class="desc">Is your worship music sound? The Watchman's ear.</div><span class="go">Open PGCS →</span></a>
-      <a class="box" href="#about"><div class="ico">👤</div><div class="name">About Gad</div><div class="desc">Who Prophet Gad is, and why this work exists.</div><span class="go">Read →</span></a>
-      <a class="box" href="#believe"><div class="ico">📖</div><div class="name">What We Believe</div><div class="desc">The Eternal Oracle — our confession of faith.</div><span class="go">Read →</span></a>
-    </div>
-
-    <!-- LATEST STRIP (auto-fill later via YouTube API; placeholders for now) -->
-    <h2>Latest</h2>
-    <div class="latest">
-      <div class="card"><div class="thumb">Newest video</div><div class="cbody"><div class="ctitle">Fresh from the channel</div>
-        <a class="pill" href="https://youtube.com/@ProphetGad">Watch on YouTube</a><a class="pill" href="https://www.tiktok.com/@prophetgad">See on TikTok</a></div></div>
-      <div class="card"><div class="thumb">Newest video</div><div class="cbody"><div class="ctitle">Newly uploaded</div>
-        <a class="pill" href="https://youtube.com/@ProphetGad">Watch on YouTube</a><a class="pill" href="https://www.tiktok.com/@prophetgad">See on TikTok</a></div></div>
-      <div class="card"><div class="thumb">Newest video</div><div class="cbody"><div class="ctitle">Recent release</div>
-        <a class="pill" href="https://youtube.com/@ProphetGad">Watch on YouTube</a><a class="pill" href="https://www.tiktok.com/@prophetgad">See on TikTok</a></div></div>
-    </div>
-
-    <!-- EMAIL CAPTURE -->
-    <h2>Stay in the Loop</h2>
-    <div class="email">
-      <h3>Get updates from the ecosystem</h3>
-      <p>New songs, new fire, and first word on offers. One list, no spam.</p>
-      <!-- Replace action with your newsletter service endpoint (Beehiiv / Buttondown / ConvertKit / Mailchimp / Formspree) -->
-      <form class="row" action="REPLACE_WITH_NEWSLETTER_ENDPOINT" method="POST">
-        <input type="email" name="email" placeholder="your@email.com" required />
-        <button type="submit">Subscribe</button>
-      </form>
-      <div class="fine">We'll only email about new releases and offers. Unsubscribe anytime.</div>
-    </div>
-
-    <!-- ABOUT -->
-    <h2 id="about">About Gad</h2>
-    <div class="believe">
-      Prophet Gad is the minister of music reborn in spirit for this age — the seer who served in King David's court, governing song and discerning what honors the Most High. The music spans bachata, Haitian groove, Nyabinghi dub, and prophetic hymn. One voice, many roads.
-    </div>
-
-    <!-- WHAT WE BELIEVE -->
-    <h2 id="believe">What We Believe — The Eternal Oracle</h2>
-    <div class="believe">
-      Prophet Gad speaks from an ancient Hebrew Israelite frame, the King James 1611. We hold the Most High as <strong>One — there is no Trinity</strong>. We call this work an <strong>oracle</strong>, not a ministry or a church: a voice that broadcasts the unadulterated Word through song and counsel. You need no middleman and no building — you can <strong>worship the Most High at your own altar</strong>, wherever you are. This is the confession behind the music, drawn out in full in <em>The Eternal Oracle.</em>
-    </div>
+  <nav aria-label="Primary navigation"><div class="wrap nav-inner"><a class="brand" href="#top">PROPHET GAD</a><div class="nav-links"><a href="#ecosystem">Ecosystem</a><a href="#watch">Watch</a><a href="#about">About PGAI</a><a href="#books">Books</a><a href="#updates">Updates</a></div></div></nav>
+  <header id="top"><div class="wrap"><div class="seal" aria-hidden="true">PG</div><div class="eyebrow">Thread Bear Music · An Oracle for This Age</div><h1>Music, Counsel &amp; Discernment</h1><p class="hero-copy">One gateway into the Prophet Gad ecosystem—prophetic music, fervent counsel, doctrinal testing, clear-signal discernment, and the books now being prepared.</p><div class="actions"><a class="button" href="#ecosystem">Enter the ecosystem</a><a class="button secondary" href="#watch">Watch the latest</a></div></div></header>
+  <main>
+    <section id="ecosystem"><div class="wrap"><div class="eyebrow">The Gateway</div><h2 class="section-title">Six doors. One ecosystem.</h2><p class="section-copy">Choose the work you came for. Each property opens in its own focused space.</p><div class="portal-grid">
+      <a class="portal" href="https://pgmc.ai"><span class="num">01 · PGMC</span><h3>Music Channel</h3><p>Explore the Prophet Gad catalog—bachata, gospel reggae, prophetic hymn, and roots prayer.</p><span class="arrow">Enter music →</span></a>
+      <a class="portal" href="https://pgfc.ai"><span class="num">02 · PGFC</span><h3>Fervent Counsel</h3><p>Bring the burden. Receive prayerful counsel grounded in scripture and sober discernment.</p><span class="arrow">Seek counsel →</span></a>
+      <a class="portal" href="https://pgdd.ai"><span class="num">03 · PGDD</span><h3>The Threshing Floor</h3><p>Doctrine tested under pressure. Enter the arena of biblical defense and spiritual warfare.</p><span class="arrow">Enter the floor →</span></a>
+      <a class="portal" href="https://pgcs.ai"><span class="num">04 · PGCS</span><h3>Clear Signal</h3><p>Examine the sound, spirit, and message carried through the music you hear.</p><span class="arrow">Test the signal →</span></a>
+      <a class="portal" href="#about"><span class="num">05 · IDENTITY</span><h3>About PGAI</h3><p>Why the Prophet Gad voice exists—and how ancient witness meets modern reach.</p><span class="arrow">Read the vision ↓</span></a>
+      <a class="portal" href="#belief"><span class="num">06 · FOUNDATION</span><h3>What We Believe</h3><p>The scriptural frame beneath the songs, counsel, doctrine, and discernment.</p><span class="arrow">Read the foundation ↓</span></a>
+    </div></div></section>
+    <section id="watch"><div class="wrap"><div class="eyebrow">The Video Showcase</div><h2 class="section-title">Ten offerings from the channel</h2><p class="section-copy">Played from YouTube—no oversized video files are hosted here.</p><div class="video-grid">
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/SnR0IcHCyfQ" title="The Three Angels' Messages — Babylon Is Fallen" allowfullscreen></iframe><h3>The Three Angels' Messages — Babylon Is Fallen</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Dml0QbEiXEE" title="Por Su Mano — Bachata Cristiana" allowfullscreen></iframe><h3>Por Su Mano — Bachata Cristiana</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/ACrLWKEtVDY" title="The Book of Gad — Eternal Father" allowfullscreen></iframe><h3>The Book of Gad — Eternal Father</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/9I6lwRrgW00" title="Thank You, Father. Thank You." allowfullscreen></iframe><h3>Thank You, Father. Thank You.</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/DciblsBCq-E" title="An Unction" allowfullscreen></iframe><h3>An Unction — Niyabinghi Roots Prayer</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/GAwN8Hu-Lp0" title="Tu Poder — Bachata Cristiana" allowfullscreen></iframe><h3>Tu Poder — Bachata Cristiana</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/b6j7xRge1qg" title="Three Angels Messages Dub" allowfullscreen></iframe><h3>Three Angels Messages Dub</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/C2oTl6oj8Ok" title="Morning Prayer — Sonic Prayer" allowfullscreen></iframe><h3>Morning Prayer — Sonic Prayer</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/dfra2ZH9ru0" title="The Mantle" allowfullscreen></iframe><h3>The Mantle — A Tribute to a Life of Faith</h3></article>
+      <article class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/qpIWyIbF5b0" title="You Still Lead Me" allowfullscreen></iframe><h3>You Still Lead Me — Bachata Praise</h3></article>
+    </div></div></section>
+    <section id="about"><div class="wrap about"><article class="oracle-card"><div class="eyebrow">Daniel 12:4</div><p class="verse">“Many shall run to and fro, and knowledge shall be increased.”</p></article><article class="about-copy"><div class="eyebrow">About PGAI</div><h2 class="section-title">Ancient witness. Modern reach.</h2><p>PGAI is the digital extension of the Prophet Gad body of work: a coordinated gateway for music, counsel, doctrinal defense, and discernment. Technology is the carrier—not the oracle. The purpose is to make the work searchable, accessible, and available across borders without surrendering its scriptural frame.</p><p id="belief"><strong>What we believe:</strong> the Most High is One. Scripture is tested against scripture. Worship requires truth as well as sound. This is an oracle and publishing work—not a replacement for personal prayer, study, judgment, or responsibility before the Most High.</p></article></div></section>
+    <section id="books"><div class="wrap"><div class="eyebrow">Thread Bear Books</div><h2 class="section-title">The bookstore is being prepared</h2><p class="section-copy">The shelves are built now so the first four books can launch without redesigning the gateway.</p><div class="books">
+      <article class="book"><div class="spine"></div><h3>The Eternal Oracle</h3><p>The scriptural and theological frame behind the Prophet Gad work.</p><span class="coming">Coming soon</span></article>
+      <article class="book"><div class="spine"></div><h3>Prophet Gad Speaks</h3><p>Witness, interpretation, and the voice carried through the songs.</p><span class="coming">Coming soon</span></article>
+      <article class="book"><div class="spine"></div><h3>The Music &amp; the Message</h3><p>A guided journey through rhythm, worship, discernment, and prophetic music.</p><span class="coming">Coming soon</span></article>
+      <article class="book"><div class="spine"></div><h3>Food, Flesh &amp; the Modern Table</h3><p>An examination of food systems, plastics, excitotoxins, and stewardship.</p><span class="coming">Coming soon</span></article>
+    </div><div class="store-note"><span><strong>Square-ready storefront shell:</strong> product cards, purchase position, and fulfillment path are reserved. No products or charges are live.</span><button type="button" disabled>Purchasing opens soon</button></div></div></section>
+    <section id="updates"><div class="wrap email"><div class="eyebrow">Stay in the Loop</div><h2 class="section-title">Hear when new work is released</h2><p class="section-copy">New songs, videos, counsel tools, and the first notice when the bookstore opens.</p><form class="email-form" id="interest-form"><label for="email" style="position:absolute;left:-9999px">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required><button type="submit">Request updates</button></form><p class="fine" id="form-note">Preview mode: this opens a pre-addressed email request. A newsletter provider will replace it before production.</p></div></section>
   </main>
-
-  <footer>
-    <div>
-      <a href="https://pgmc.ai">Music</a>·
-      <a href="https://pgfc.ai">Counsel</a>·
-      <a href="https://pgdd.ai">Threshing Floor</a>·
-      <a href="https://pgcs.ai">Clear Signal</a>
-    </div>
-    <div class="copy">© Remnant Seed LLC · Thread Bear Music · Prophet Gad</div>
-  </footer>
+  <footer><div class="wrap">© 2026 Remnant Seed LLC · Thread Bear Music · Prophet Gad</div></footer>
+  <script>document.getElementById("interest-form").addEventListener("submit",function(event){event.preventDefault();const email=document.getElementById("email").value.trim();if(!email)return;const subject=encodeURIComponent("Prophet Gad ecosystem updates");const body=encodeURIComponent("Please add "+email+" to the Prophet Gad release updates list.");window.location.href="mailto:ydddl777@gmail.com?subject="+subject+"&body="+body;document.getElementById("form-note").textContent="Your email app should open with a prepared request. Nothing was submitted automatically.";});</script>
 </body>
 </html>
